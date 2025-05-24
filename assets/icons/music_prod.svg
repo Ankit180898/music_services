@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Leftmost small bar -->
+    <rect x="40" y="80" width="10" height="40" rx="5" fill="#FF6F6F"/>
+    
+    <!-- Second bar -->
+    <rect x="60" y="65" width="10" height="70" rx="5" fill="#FF6F6F"/>
+    
+    <!-- Third bar -->
+    <rect x="80" y="75" width="10" height="50" rx="5" fill="#FF6F6F"/>
+    
+    <!-- Center (tallest) bar -->
+    <rect x="100" y="55" width="10" height="90" rx="5" fill="#FF6F6F"/>
+
+    <!-- Third bar (right) -->
+    <rect x="120" y="70" width="10" height="60" rx="5" fill="#FF6F6F"/>
+
+    <!-- Second bar (right) -->
+    <rect x="140" y="90" width="10" height="20" rx="5" fill="#FF6F6F"/>
+
+  </svg>
+  

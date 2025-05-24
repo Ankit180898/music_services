@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "822415681249",
+    "project_id": "s-rock-music",
+    "storage_bucket": "s-rock-music.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822415681249:android:5cdb5c1815c890bc8ff9a0",
+        "android_client_info": {
+          "package_name": "com.example.music_services"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUePqetFb0FsAFdul_O_R-kc6hk-Hat4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
