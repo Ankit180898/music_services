@@ -1,17 +1,10 @@
 # Mini Project – “Music Services Module (Single Screen)”
 
+![music_services](https://github.com/user-attachments/assets/37f3d962-218f-4780-bc9d-95f61cf2b177)
 
 ## Project Overview
 
 This Flutter application is an assignment for flutter developer role by S.Rocks.Music. It lists various music platforms with their details and icons, following a clean UI/UX approach.
-
-## Services Offered
-
-- **Music Production**: Professional music creation and arrangement
-- **Lyrics Writing**: Expert lyric composition and songwriting
-- **Mixing & Mastering**: High-quality audio mixing and mastering services
-- **Vocal Composition**: Professional vocal arrangement and composition
-- **Genre-Specific Production**: Specialized production across diverse music genres
 
 ## Architecture
 
@@ -51,7 +44,7 @@ The project uses several key dependencies:
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/Ankit180898/music_services.git
 ```
 
 2. Install dependencies:
