@@ -1,9 +1,9 @@
-# Music Services Module Assignment 
+# Mini Project – “Music Services Module (Single Screen)”
 
 
 ## Project Overview
 
-S.Rocks.Music is a comprehensive online platform that provides professional music services to artists worldwide. Our application facilitates seamless collaboration between artists and our team of experienced music professionals, offering a range of services from music production to final mastering.
+This Flutter application is an assignment for flutter developer role by S.Rocks.Music. It lists various music platforms with their details and icons, following a clean UI/UX approach.
 
 ## Services Offered
 
