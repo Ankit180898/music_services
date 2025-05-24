@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This Flutter application is a concept demo for a music service by S.Rocks.Music. It lists various music platforms with their details and icons, following a clean UI/UX approach.
+This Flutter application is an assignment for flutter developer role by S.Rocks.Music. It lists various music platforms with their details and icons, following a clean UI/UX approach.
 
 ## Services Offered
 
