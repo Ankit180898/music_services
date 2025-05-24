@@ -60,6 +60,11 @@ flutter pub get
 ```bash
 flutter run
 ```
+## Screen Recording
+
+
+https://github.com/user-attachments/assets/ba2ffcd5-6c20-4772-8de8-00ddfd2e970b
+
 
 ## Development Approach
 
