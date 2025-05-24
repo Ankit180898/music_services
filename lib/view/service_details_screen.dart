@@ -31,26 +31,23 @@ class ServiceDetailScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Center(
-           child: SquircleWidget(
+                  child: SquircleWidget(
+                    color: Colors.transparent,
+                    borderRadius: 36,
 
-            color: Colors.transparent,
-              borderRadius: 16,
+                    child: Container(
+                      width: MediaQuery.of(context).size.height * 0.15,
+                      height: MediaQuery.of(context).size.height * 0.15,
+                      color: Color(0xff2F2F39),
 
-              child: Container(
-                    width: MediaQuery.of(context).size.height * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(24),
-                      color: Color(0xff2F2F39)
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: SvgPicture.asset(
+                          'assets/icons/${service.iconPath}',
+                        ),
+                      ),
                     ),
-                    child:
-                       Padding(
-                         padding: const EdgeInsets.all(12.0),
-                         child: SvgPicture.asset('assets/icons/${service.iconPath}'),
-                       ),
-
                   ),
-            ),
                 ),
                 const SizedBox(height: 32),
                 Center(
@@ -74,89 +71,91 @@ class ServiceDetailScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 24),
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(
-                      color: Colors.white.withOpacity(0.2),
-                      width: 1,
+                SquircleWidget(
+                  borderRadius: 24,
+                  borderSide: 1.0,
+                  color: Colors.white.withOpacity(0.2),
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1),
                     ),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Service Description',
-                        style: Utils.syneTextStyle.copyWith(
-                          fontWeight: FontWeight.w600,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Service Description',
+                          style: Utils.syneTextStyle.copyWith(
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 12),
-                      Text(
-                        service.description,
-                        style: Utils.syneTextStyle.copyWith(
-                          color: Colors.white.withOpacity(0.9),
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                          height: 1.5,
+                        const SizedBox(height: 12),
+                        Text(
+                          service.description,
+                          style: Utils.syneTextStyle.copyWith(
+                            color: Colors.white.withOpacity(0.9),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            height: 1.5,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 const SizedBox(height: 24),
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(
-                      color: Colors.white.withOpacity(0.2),
-                      width: 1,
+                SquircleWidget(
+                  borderRadius: 32,
+                  borderSide: 1.0,
+                  color: Colors.white.withOpacity(0.2),
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1),
                     ),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Service Details',
-                        style: Utils.syneTextStyle.copyWith(
-                          fontWeight: FontWeight.w600,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Service Details',
+                          style: Utils.syneTextStyle.copyWith(
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 12),
-                      _buildDetailRow('Service ID', service.id),
-                      _buildDetailRow('Order', service.order.toString()),
-                      _buildDetailRow('Icon', service.iconPath),
-                    ],
+                        const SizedBox(height: 12),
+                        _buildDetailRow('Service ID', service.id),
+                        _buildDetailRow('Order', service.order.toString()),
+                        _buildDetailRow('Icon', service.iconPath),
+                      ],
+                    ),
                   ),
                 ),
                 const Spacer(),
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      foregroundColor: const Color(0xFFB91D73),
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
+                SquircleWidget(
+                  borderRadius: 32,
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        elevation: 0,
                       ),
-                      elevation: 0,
-                    ),
-                    child: Text(
-                      'Back to Services',
-                      style: Utils.syneTextStyle.copyWith(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: const Color(0xFFB91D73),
+                      child: Text(
+                        'Back to Services',
+                        style: Utils.syneTextStyle.copyWith(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ),
